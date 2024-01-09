@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Piedra,Papel o Tijera</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header>
+        <!-- Titulo -->
+        <h1>Piedra,Papel o Tijera</h1>
+        <p>El juego clásico</p>
+
+
+    </header>
+
+    <main>
+        <!-- Instrucciones -->
+        <p class="instrucciones" id="instrucciones">
+            El primero en llegar a 5 puntos gana.
+        </p>
+        <!-- Marcador -->
+        <div class="marcador">
+            <p class="nombre nombre-jugador"><img src="./assets/player.gif" alt="" class="player" id="player"></p>
+            <p class="nombre nombre-computadora"><img src="./assets/pc.gif" alt="" class="pc" id="pc"></p>
+            <p class="puntos">
+                <span id="puntos-usuario">0</span>
+                <span>-</span>
+                <span id="puntos-computadora">0</span>
+            </p>
+        </div>
+        <!-- Elegir arma -->
+        <div class="elegi-tu-arma" id="elegi-tu-arma">
+            <h2>Elige tú arma para el próximo turno</h2>
+            <div class="armas">
+                <button class="arma" id="piedra🪨">🪨</button>
+                <button class="arma" id="papel📋">📋</button>
+                <button class="arma" id="tijera✂️">✂️</button>
+            </div>
+
+        </div>
+        <!-- Resultado de cada jugada -->
+        <div class="mensaje disabled" id="mensaje">
+
+            <p>
+                Usaste <span class="eleccion" id="eleccion-usuario">papel📋</span><br>
+                y la computadora usó <span class="eleccion" id="eleccion-computadora">piedra🪨</span>
+            </p>
+            <p id="gana-punto">¡Ganaste un punto! 🔥</p>
+        </div>
+
+        <!-- Reiniciar juego -->
+        <button class="btn disabled" id="reiniciar">Reiniciar juego</button>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
